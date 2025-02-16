@@ -1,0 +1,62 @@
+﻿@model Biodata_Maker.Models.User
+@{
+    //Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>User Data Display</title>
+</head>
+<body>
+    <div class="m-3">
+        <b>नाव</b> : @Model.UserName
+    </div>
+    <div class="m-3">
+        <b>जन्मदिनांक</b> : @Model.UserDOB.ToString("dd/MM/yyyy")
+    </div>
+    <div class="m-3">
+        <b>जन्मठिकाण</b> : @Model.BirthPlace
+    </div>
+    <div class="m-3">
+        <b>ऊंची</b> : @Model.Height
+    </div>
+    <div class="m-3">
+        <b>वर्ण</b> : @Model.Color
+    </div>
+    <div class="m-3">
+        <b>रक्तगट</b> : @Model.BloodGroup
+    </div>
+    <div class="m-3">
+        <b>शिक्षण</b> : @Model.Education
+    </div>
+    <div class="m-3">
+        <b>नोकरी</b> : @Model.Occupation
+    </div>
+    <div class="m-3">
+        <b>वडिलांचे नाव</b> : @Model.FatherName
+    </div>
+    <div class="m-3">
+        <b>आईचे नाव</b> : @Model.MotherName
+    </div>
+    <div class="m-3">
+        <b>भाऊ</b> : @Model.BrotherCount
+    </div>
+    <div class="m-3">
+        <b>बहीण</b> : @Model.SisterCount
+    </div>
+    <div class="m-3">
+        <b>जात</b> : @Model.Cast
+    </div>
+    <div class="m-3">
+        <b>कुलदैवत</b> : @Model.Kuladevata
+    </div>
+    <div class="m-3">
+        <b>पत्ता</b> : @Model.NativeAddress
+    </div>
+    <div class="m-3">
+        <b>मोबाइल</b> : @Model.MobileNumber
+    </div>
+</body>
+</html>     
