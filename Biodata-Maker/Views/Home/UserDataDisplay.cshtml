@@ -1,6 +1,6 @@
 ﻿@model Biodata_Maker.Models.User
 @{
-    //Layout = null;
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -8,55 +8,97 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>User Data Display</title>
+    <style>
+        body {
+            border: 2px solid black;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="m-3">
-        <b>नाव</b> : @Model.UserName
-    </div>
-    <div class="m-3">
-        <b>जन्मदिनांक</b> : @Model.UserDOB.ToString("dd/MM/yyyy")
-    </div>
-    <div class="m-3">
-        <b>जन्मठिकाण</b> : @Model.BirthPlace
-    </div>
-    <div class="m-3">
-        <b>ऊंची</b> : @Model.Height
-    </div>
-    <div class="m-3">
-        <b>वर्ण</b> : @Model.Color
-    </div>
-    <div class="m-3">
-        <b>रक्तगट</b> : @Model.BloodGroup
-    </div>
-    <div class="m-3">
-        <b>शिक्षण</b> : @Model.Education
-    </div>
-    <div class="m-3">
-        <b>नोकरी</b> : @Model.Occupation
-    </div>
-    <div class="m-3">
-        <b>वडिलांचे नाव</b> : @Model.FatherName
-    </div>
-    <div class="m-3">
-        <b>आईचे नाव</b> : @Model.MotherName
-    </div>
-    <div class="m-3">
-        <b>भाऊ</b> : @Model.BrotherCount
-    </div>
-    <div class="m-3">
-        <b>बहीण</b> : @Model.SisterCount
-    </div>
-    <div class="m-3">
-        <b>जात</b> : @Model.Cast
-    </div>
-    <div class="m-3">
-        <b>कुलदैवत</b> : @Model.Kuladevata
-    </div>
-    <div class="m-3">
-        <b>पत्ता</b> : @Model.NativeAddress
-    </div>
-    <div class="m-3">
-        <b>मोबाइल</b> : @Model.MobileNumber
-    </div>
+    <table>
+        <tr>
+            <td><b>नाव</b></td>
+            <td> : </td>
+            <td>@Model.UserName</td>
+        </tr>
+        <tr>
+            <td><b>जन्मदिनांक</b></td>
+            <td> : </td>
+            <td>@Model.UserDOB.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td><b>जन्मठिकाण</b></td>
+            <td> : </td>
+            <td>@Model.BirthPlace</td>
+        </tr>
+        <tr>
+            <td><b>ऊंची</b></td>
+            <td> : </td>
+            <td>@Model.Height</td>
+        </tr>
+        <tr>
+            <td><b>वर्ण</b></td>
+            <td> : </td>
+            <td>@Model.Color</td>
+        </tr>
+        <tr>
+            <td><b>रक्तगट</b></td>
+            <td> : </td>
+            <td>@Model.BloodGroup</td>
+        </tr>
+        <tr>
+            <td><b>शिक्षण</b></td>
+            <td> : </td>
+            <td>@Model.Education</td>
+        </tr>
+        <tr>
+            <td><b>नोकरी</b></td>
+            <td> : </td>
+            <td>@Model.Occupation</td>
+        </tr>
+        <tr>
+            <td><b>वडिलांचे नाव</b></td>
+            <td> : </td>
+            <td>@Model.FatherName</td>
+        </tr>
+        <tr>
+            <td><b>आईचे नाव</b></td>
+            <td> : </td>
+            <td>@Model.MotherName</td>
+        </tr>
+        <tr>
+            <td><b>भाऊ</b></td>
+            <td> : </td>
+            <td>@Model.BrotherCount</td>
+        </tr>
+        <tr>
+            <td><b>बहीण</b></td>
+            <td> : </td>
+            <td>@Model.SisterCount</td>
+        </tr>
+        <tr>
+            <td><b>जात</b></td>
+            <td> : </td>
+            <td>@Model.Cast</td>
+        </tr>
+        <tr>
+            <td><b>कुलदैवत</b></td>
+            <td> : </td>
+            <td>@Model.Kuladevata</td>
+        </tr>
+        <tr>
+            <td><b>पत्ता</b></td>
+            <td> : </td>
+            <td>@Model.NativeAddress</td>
+        </tr>
+        <tr>
+            <td><b>मोबाइल</b></td>
+            <td> : </td>
+            <td>@Model.MobileNumber</td>
+        </tr>
+    </table>
 </body>
-</html>     
+</html>
